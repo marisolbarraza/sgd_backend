@@ -27,11 +27,11 @@ public class UsuarioController {
         return usuarioService.listarUsuarios();
     }
 
-    @PostMapping("/usuario")
-    @ResponseBody
-    public Usuario crearUsuario(@RequestBody Usuario usuario) {
-        return usuarioService.crearUsuario(usuario);
-    }
+//    @PostMapping("/usuario")
+//    @ResponseBody
+//    public Usuario crearUsuario(@RequestBody Usuario usuario) {
+//        return usuarioService.crearUsuario(usuario);
+//    }
 
     @DeleteMapping("/usuario/{id}")
     public void eliminarUsuario(@PathVariable int id) {
