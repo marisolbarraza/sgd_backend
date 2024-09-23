@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 @Configuration
 public class CorsConfig {
-
+//Añadir el web en variables de entorno.
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();

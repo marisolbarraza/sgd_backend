@@ -3,21 +3,38 @@ package com.ar.sgd.sgd_back.model;
 import java.time.LocalDate;
 
 public class Denuncia {
-    private long idDenuncia;
-    private LocalDate fechaDenuncia;
-    private String aprehendido;
-    private String conMedida;
-    private String interes;
-    private String seguro;
-    private String elementosSustraidos;
+
+    //Armar una clase que consuma esos datos desde el servidor cuando se encienda, chequee y deje para completar
+    /*
+    * 1. Cuando inicie el servicio o cuando se lo solicite, cargar las denuncias
+    * 2. El sistema checkea que el sistema se
+    *
+    * */
+
+    //Lo que viene de la api del MPF
+    private long idDenuncia; //si
+    private Localidad localidad;//Si
+    private Comisaria comisaria;//si
+    private LocalDate fechaDenuncia; //SI
     private LocalDate fechaHecho;
-    private String fiscalia;
+    private TipoDelito tipoDelito;//Si
+    //private Ubicación ubicacion //SI
+    private String Denunciante //si
+    private int edad;//si
+
+    //Lo que completan
+    private String aprehendido; //p
+    private String conMedida; //p
+    private String interes;//p
+    private String seguro;//p
+    private String elementosSustraidos;//p
     private TipoArma tipoArma;
-    private Modalidad movilidad;
+    private Submodalidad submovilidad;
     private Autor autor;
-    private TipoDelito tipoDelito;
     private Victima victima;
     private Especializacion especializacion;
-    private Comisaria comisaria;
+
+    private String fiscalia; //NO
+
 
 }
